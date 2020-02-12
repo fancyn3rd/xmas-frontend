@@ -118,7 +118,7 @@ function initBalls() {
 }
 
 function loadTextures() {
-  for (let i = 1; i < MAX_TEXTURES; i++) {
+  for (let i = 1; i <= MAX_TEXTURES; i++) {
       ballTextures[i] = PIXI.Texture.from(`assets/pattern/0${i}.png`);
     }
   }
@@ -167,7 +167,7 @@ function createBall(id) {
   balls[id].instanced = false
   balls[id].shrink = false
   balls[id].lifeTime = 0
-  balls[id].textureId = randomRange(0,30)
+  balls[id].textureId = randomRange(1,MAX_TEXTURES)
 }
 
 
