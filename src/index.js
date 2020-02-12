@@ -3,7 +3,10 @@ import mqtt from "mqtt"
 import * as PIXI from "pixi.js"
 
 const DEBUG = false
-const TESTMODE = false
+const TESTMODE = true
+
+const MAX_BALLS = 100
+const MAX_TEXTURES = 8
 
 const mqttClient = mqtt.connect("mqtt://localhost:9001")
 
@@ -30,10 +33,6 @@ const ornamentStyle = new PIXI.TextStyle({
   dropShadowDistance: 2,
 
 });
-
-const MAX_BALLS = 100
-const MAX_TEXTURES = 53
-
 
 let balls = [MAX_BALLS]
 let ornaments = [MAX_BALLS]
