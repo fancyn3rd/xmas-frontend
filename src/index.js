@@ -13,7 +13,7 @@ const mqttClient = mqtt.connect("mqtt://localhost:9001")
 const app = new PIXI.Application({ backgroundColor: 0x00000, antialias: true, width: screen.width, height: screen.height});
 document.body.appendChild(app.view)
 
-const tanne = PIXI.Sprite.from('assets/tanne2.png');
+const tanne = PIXI.Sprite.from('assets/tanne.png');
 app.stage.addChild(tanne);
 
 const spawnArea = new PIXI.Graphics();
