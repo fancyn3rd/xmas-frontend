@@ -15,3 +15,7 @@ Its a webapp that uses [pixi.js](https://www.pixijs.com/) to render an xmas tree
 **Usage**
 
     npm run start
+
+
+## TO DO
+- Adapt frontend to diffent screen sizes
